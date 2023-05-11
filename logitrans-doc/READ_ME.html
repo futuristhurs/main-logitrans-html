@@ -1,0 +1,1044 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>LOGITRANS Theme Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt"><strong>LOGITRANS HTML</strong> Documentation by <strong>Themes Awesome</strong> v1.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">LOGITRANS - Logistic and Transportation HTML Template</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 2 October 2015<br>
+					By: Themes Awesome<br>
+					Support: Ask support access <a href="https://themesawesome.zendesk.com/hc/en-us">HERE</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing LOGITRANS HTML. If you have any questions that aren't covered in the documentation, then please send me a PM and I'll be happy to help. Thanks again!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+				<ul>
+					<li><a href="#start">Start</a></li>
+					<li><a href="#tips">TIPS</a></li>
+					<li><a href="#files_structure">FILES STRUCTURE</a></li>
+					<li><a href="#html_structure">HTML STRUCTURE</a></li>
+					<li><a href="#css_structure">CSS STRUCTURE</a></li>	
+					<li><a href="#java_script">JAVA SCRIPT</a></li>
+					<li><a href="#customization_styles">CUSTOMIZATION &amp; STYLES</a></li>
+					<li><a href="#responsive">RESPONSIVE</a></li>
+					<li><a href="#source_credits">SOURCE &amp; CREDITS</a></li>
+				</ul>
+		</ol>
+		<br/><br/>
+		<hr>
+		<br/>
+
+		<div class="clear"></div>
+
+		<hr>
+
+		<h3 id="setting-up"><strong>LOGITRANS HTML</strong> - <a href="#toc">top</a></h3>
+
+		<div class="subsection" id="start">
+			<h4>LOGITRANS</h4>
+			<p>LOGITRANS is </p>
+			<img src="assets/images/logo.png" style="width:25%;margin: 0 35%;"/>
+			<br/><br/>
+	</div>
+
+		<div class="subsection" id="tips">
+			<h4>Tips</h4>
+			<p class="note">
+			Use Firebug or Chrome Developer Tools.</p>
+			<p class="note">
+			Do not start from scratch, use an existing page from the demo and modify it to learn how it works.</p>
+			<p class="note">
+			Getting an error message? Someone might have seen it too, try a google search for a quick fix.</p>
+			<p class="note">
+			Explore the live demo for pages ideas and sample code.</p>
+		</div>
+		
+		<div class="subsection" id="files_structure">
+			<h4>Files Structure</h4>
+			<pre>
+			- css (Template CSS)
+
+			- fonts (All Fonts &amp; Icons)
+			    
+			- img (All Images)
+
+			- js (Template JS)
+			    - views (JS to run in specific pages. I.E: Home or Contact Us)
+
+			</pre>
+		</div>
+
+	
+		<div class="subsection" id="html_structure">
+			<h4>Html Structure</h4>
+			<p>	The template is based on <strong>Bootstrap </strong>Framework - <a href="http://twitter.github.com/bootstrap/">http://twitter.github.com/bootstrap/</a></p>
+			<p>	The default Bootstrap grid system utilizes <strong>12 columns</strong>, making for a <strong>1170px </strong>wide depending on your viewport. Below 767px viewports, the columns become fluid and stack vertically.<br>
+				<br>
+				Create a .row and add the appropriate number of .span* columns.<br>
+				&nbsp;</p>
+			<h5>HTML Markup</h5>
+			<pre class="brush: html">
+			&lt;div class=&quot;row&quot;&gt;
+			    &lt;div class=&quot;span12&quot;&gt;
+			        Level 1 column
+			        &lt;div class=&quot;row&quot;&gt;
+			            &lt;div class=&quot;span6&quot;&gt;Level 2&lt;/div&gt;
+			            &lt;div class=&quot;span6&quot;&gt;Level 2&lt;/div&gt;
+			        &lt;/div&gt;
+			    &lt;/div&gt;
+			&lt;/div&gt;
+			</pre>
+			<p>	&nbsp;</p>
+		<p>	If you need more information, please visit this site: <a href="http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem">http://getbootstrap.com/2.3.2/scaffolding.html#gridSystem</a></p>
+
+		<h5>Head Script (Default)</h5>
+		<pre>
+	    &lt;head&gt;
+	        &lt;meta http-equiv="content-type" content="text/html; charset=utf-8" /&gt;
+	        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+
+	        &lt;!-- Google Fonts
+	        ============================================= --&gt;
+	        &lt;link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'&gt;
+	        &lt;link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'&gt;
+
+	        &lt;!-- Stylesheets
+	        ============================================= --&gt;
+	        &lt;link rel="stylesheet" href="css/plugin.css" type="text/css" /&gt;
+	        &lt;link rel="stylesheet" href="css/style.css" type="text/css" /&gt;
+	        &lt;link rel="stylesheet" href="css/responsive.css" type="text/css" /&gt;
+
+	        &lt;!-- JavaScripts
+	        ============================================= --&gt;
+	        &lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+	        &lt;script type="text/javascript" src="js/formcalculations.js"&gt;&lt;/script&gt;
+
+	        &lt;meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" /&gt;
+
+	        &lt;!-- JavaScripts
+	        ============================================= --&gt;
+	        &lt;script type="text/javascript" src="js/jquery.js"&gt;&lt;/script&gt;
+
+	        &lt;!--[if IE]&gt;
+	        &lt;script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"&gt;&lt;/script&gt;
+	        &lt;![endif]--&gt;
+
+	        &lt;title&gt;Logitrans | Logistics & Transportation HTML Themes&lt;/title&gt;
+	    &lt;/head&gt;
+	    </pre>
+
+		<h5>Header Markup</h5>
+
+		<pre>
+	    &lt;!-- HEADER
+        ============================================= --&gt;
+        &lt;header id="header" class="clearfix"&gt;
+            &lt;div class="site-header"&gt;
+                &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="top-header clearfix"&gt;
+                            &lt;div class="logo col-md-4"&gt;
+                                &lt;a href="index.html"&gt;
+                                    &lt;img src="img/logo.png" alt="" /&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="info col-md-8"&gt;
+                                &lt;ul&gt;
+                                    &lt;li&gt;
+                                        &lt;i class="fa fa-clock-o"&gt;&lt;/i&gt;
+                                        &lt;p&gt;
+                                            &lt;span class="heading"&gt;Opening Hours&lt;/span&gt;
+                                            &lt;span&gt;Mon - Sat: 09.00 - 17.00&lt;/span&gt;
+                                        &lt;/p&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;
+                                        &lt;i class="fa fa-phone"&gt;&lt;/i&gt;
+                                        &lt;p&gt;
+                                            &lt;span class="heading"&gt;Call Us&lt;/span&gt;
+                                            &lt;span&gt;(064) 234 54876&lt;/span&gt;
+                                        &lt;/p&gt;
+                                    &lt;/li&gt;
+                                    &lt;li class="last"&gt;
+                                        &lt;i class="fa fa-envelope"&gt;&lt;/i&gt;
+                                        &lt;p&gt;
+                                            &lt;span class="heading"&gt;Email Us&lt;/span&gt;
+                                            &lt;span&gt;logitrans@domain.com&lt;/span&gt;
+                                        &lt;/p&gt;
+                                    &lt;/li&gt;
+                                &lt;/ul&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="slide-buttons"&gt;
+                                &lt;button id="slide-buttons" class="slide-button icon icon-navicon"&gt;&lt;/button&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="navigation"&gt;
+                            &lt;div class="main-menu"&gt;
+                                &lt;ul class="menu"&gt;
+                                    &lt;li class="has-sub"&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;
+                                    	&lt;ul&gt;
+                                    		&lt;li&gt;&lt;a href="index.html"&gt;Header Style 1&lt;/a&gt;&lt;/li&gt;
+                                    		&lt;li&gt;&lt;a href="header-style-2.html"&gt;Header Style 2&lt;/a&gt;&lt;/li&gt;
+                                    	&lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="about-us.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li class="has-sub"&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;
+                                        &lt;ul&gt;
+                                           &lt;li&gt;&lt;a href="single-services.html"&gt;Overland Network&lt;/a&gt;&lt;/li&gt;
+                                           &lt;li&gt;&lt;a href="single-services.html"&gt;Ocean Netwok&lt;/a&gt;&lt;/li&gt;
+                                           &lt;li&gt;&lt;a href="single-services.html"&gt;Air Freight&lt;/a&gt;&lt;/li&gt;
+                                           &lt;li&gt;&lt;a href="single-services.html"&gt;Cargo&lt;/a&gt;&lt;/li&gt;
+                                           &lt;li&gt;&lt;a href="single-services.html"&gt;Storage&lt;/a&gt;&lt;/li&gt;
+                                           &lt;li class="last"&gt;&lt;a href="single-services.html"&gt;Warehousing&lt;/a&gt;&lt;/li&gt;
+                                        &lt;/ul&gt;
+                                    &lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="blog.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                                    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                                &lt;/ul&gt;
+
+                                &lt;div class="right-section"&gt;
+                                    &lt;div class="search"&gt;
+                                        &lt;i class="fa fa-search"&gt;&lt;/i&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="quote-link"&gt;
+                                        &lt;a href="contact.html"&gt;Request a Quote&lt;/a&gt;
+                                    &lt;/div&gt;
+                                    &lt;div class="search-input"&gt;
+                                        &lt;input type="text" name="s" placeholder="Type some text in here..." class="untouched"&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;!-- Menu Mobile
+            ============================================= --&gt;
+            &lt;nav id="c-menu--slide-right" class="c-menu c-menu--slide-right"&gt;
+                &lt;button class="c-menu__close icon icon-close"&gt;&lt;/button&gt;
+
+                &lt;div class="search-input"&gt;
+                    &lt;input type="text" name="s" placeholder="Type some text in here..." class="untouched"&gt;
+                    &lt;button&gt;&lt;i class="fa fa-search"&gt;&lt;/i&gt;&lt;/button&gt;
+                &lt;/div&gt;
+
+                &lt;ul class="slide-menu-items"&gt;
+                    &lt;li class="has-sub"&gt;&lt;a href="index.html"&gt;Home&lt;/a&gt;
+                    	&lt;ul&gt;
+                    		&lt;li&gt;&lt;a href="index.html"&gt;Header Style 1&lt;/a&gt;&lt;/li&gt;
+                    		&lt;li&gt;&lt;a href="header-style-2.html"&gt;Header Style 2&lt;/a&gt;&lt;/li&gt;
+                    	&lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href="about-us.html"&gt;About Us&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="has-sub"&gt;&lt;a href="services.html"&gt;Services&lt;/a&gt;
+                        &lt;ul&gt;
+                           &lt;li&gt;&lt;a href="single-services.html"&gt;Overland Network&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="single-services.html"&gt;Ocean Netwok&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="single-services.html"&gt;Air Freight&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="single-services.html"&gt;Cargo&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="single-services.html"&gt;Storage&lt;/a&gt;&lt;/li&gt;
+                           &lt;li&gt;&lt;a href="single-services.html"&gt;Warehousing&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;&lt;a href="blog.html"&gt;Blog&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt;a href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;div class="info"&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;p&gt;
+                                &lt;span class="heading"&gt;Opening Hours&lt;/span&gt;
+                                &lt;span&gt;Mon - Sat: 09.00 - 17.00&lt;/span&gt;
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;p&gt;
+                                &lt;span class="heading"&gt;Call Us&lt;/span&gt;
+                                &lt;span&gt;(064) 234 54876&lt;/span&gt;
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                        &lt;li class="last"&gt;
+                            &lt;p&gt;
+                                &lt;span class="heading"&gt;Email Us&lt;/span&gt;
+                                &lt;span&gt;logitrans@domain.com&lt;/span&gt;
+                            &lt;/p&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/nav&gt;
+
+            &lt;div id="slide-overlay" class="slide-overlay"&gt;&lt;/div&gt;
+            &lt;!-- Menu Mobile End --&gt;
+        &lt;/header&gt;
+        &lt;!-- HEADER END --&gt;
+		</pre>
+
+		<h5>Template</h5>
+
+		<p>LOGITRANS have 13 template</p>
+		<ul>
+			<li>Home</li>
+			<li>Home 2</li>
+			<li>About Us</li>
+			<li>Blog</li>
+			<li>Single Post</li>
+			<li>Service
+				<ul><li>Overland Network</li>
+				<li>Ocean Network</li>
+				<li>Air Freight</li>
+				<li>Cargo</li>
+				<li>Storage</li>
+				<li>Warehouse</li></ul>
+			</li>			
+			<li>Contact</li>
+		</ul>
+
+		<h5>Footer Script Markup</h5>
+		<pre>
+        &lt;!-- FOOTER START
+            ============================================= --&gt;
+            &lt;footer id="footer" class="wrapper clearfix"&gt;
+
+                &lt;div class="container"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="footer-wrap row"&gt;
+                            &lt;!-- WIDGET FOOTER 1 START
+                            ============================================= --&gt;
+                            &lt;div class="widget-footer col-md-3 wow fadeIn" data-wow-delay="0.3s"&gt;
+                                &lt;div class="short-desc"&gt;
+                                    &lt;div class="logo-footer"&gt;
+                                        &lt;img src="img/logo-footer.png" alt="" /&gt;
+                                    &lt;/div&gt;
+                                    &lt;p&gt;Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna, nec imperdiet lacus semper vitae.<br> Sed hendrerit enim non justo posuere placerat eget purus mauris.&lt;/p&gt;
+                                    &lt;p&gt;Etiam facilisis eu nisi scelerisque fabus. Proin semper suscipit magna, nec pediet lacus semper.&lt;/p&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- WIDGET FOOTER 1 END --&gt;
+
+                            &lt;!-- WIDGET FOOTER 2 START
+                            ============================================= --&gt;
+                            &lt;div class="widget-footer col-md-3 wow fadeIn" data-wow-delay="0.6s"&gt;
+                                &lt;div class="recent-post"&gt;
+                                    &lt;h4 class="title"&gt;Recent Post&lt;/h4&gt;
+                                    &lt;div class="footer-content"&gt;
+                                        &lt;div class="post-item"&gt;
+                                            &lt;a href="single-post.html"&gt;
+                                                &lt;div class="post-thumb"&gt;
+                                                    &lt;img src="img/content/recent-post-thumb-1.jpg" alt="" /&gt;
+                                                    &lt;div class="overlay"&gt;&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/a&gt;
+                                            &lt;div class="post-content"&gt;
+                                                &lt;a href="single-post.html"&gt;
+                                                    &lt;h4&gt;Your Blog Title Here&lt;/h4&gt;
+                                                &lt;/a&gt;
+                                                &lt;p&gt;Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus...&lt;/p&gt;
+                                                &lt;div class="meta"&gt;
+                                                    &lt;span class="date"&gt;02 August, 2015&lt;/span&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+
+                                        &lt;div class="post-item"&gt;
+                                            &lt;a href="single-post.html"&gt;
+                                                &lt;div class="post-thumb"&gt;
+                                                    &lt;img src="img/content/recent-post-thumb-2.jpg" alt="" /&gt;
+                                                    &lt;div class="overlay"&gt;&lt;/div&gt;
+                                                &lt;/div&gt;
+                                            &lt;/a&gt;
+                                            &lt;div class="post-content"&gt;
+                                                &lt;a href="single-post.html"&gt;
+                                                    &lt;h4&gt;Your Blog Title Here&lt;/h4&gt;
+                                                &lt;/a&gt;
+                                                &lt;p&gt;Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus...&lt;/p&gt;
+                                                &lt;div class="meta"&gt;
+                                                    &lt;span class="date"&gt;02 August, 2015&lt;/span&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- WIDGET FOOTER 2 END --&gt;
+
+                            &lt;!-- WIDGET FOOTER 3 START
+                            ============================================= --&gt;
+                            &lt;div class="widget-footer col-md-3 wow fadeIn" data-wow-delay="0.9s"&gt;
+                                &lt;div class="contact-footer"&gt;
+                                    &lt;h4 class="title"&gt;Contact Us&lt;/h4&gt;
+                                    &lt;div class="footer-content"&gt;
+                                        &lt;div class="contact-section"&gt;
+                                            &lt;h4&gt;Our Office Address&lt;/h4&gt;
+                                            &lt;p&gt;Boulevard des Capucines&lt;/p&gt;
+                                            &lt;p&gt;356, Coffee Street&lt;/p&gt;
+                                            &lt;p&gt;Paris, France&lt;/p&gt;
+                                            &lt;p&gt;Telephone : + 1 555 356 876&lt;/p&gt;
+                                            &lt;p&gt;Email : info@themesawesome.com&lt;/p&gt;
+                                        &lt;/div&gt;
+                                        &lt;div class="contact-section"&gt;
+                                            &lt;h4&gt;Our Storage Address&lt;/h4&gt;
+                                            &lt;p&gt;Boulevard des Capucines&lt;/p&gt;
+                                            &lt;p&gt;356, Coffee Street&lt;/p&gt;
+                                            &lt;p&gt;Paris, France&lt;/p&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- WIDGET FOOTER 3 END --&gt;
+
+                            &lt;!-- WIDGET FOOTER 4 START
+                            ============================================= --&gt;
+                            &lt;div class="widget-footer col-md-3 wow fadeIn" data-wow-delay="1.2s"&gt;
+                                &lt;div class="buy-now"&gt;
+                                    &lt;h4 class="title"&gt;Buy Now !&lt;/h4&gt;
+                                    &lt;div class="footer-content"&gt;
+                                        &lt;p&gt;Phasellus et nisl tellus. Etiam facilisis eu nisi scelerisque faucibus. Proin semper suscipit magna,<br> nec imperdiet lacus semper vitae. Sed hendrerit enim non justo posuere placerat eget purus mauris.&lt;/p&gt;
+
+                                        &lt;a href="#" class="button-normal white"&gt;Buy Now&lt;/a&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                            &lt;!-- WIDGET FOOTER 4 END --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;!-- COPYRIGHT START
+                ============================================= --&gt;
+                &lt;div class="copyright text-center wow fadeIn" data-wow-delay="1s"&gt;
+                    &lt;div class="container"&gt;
+                        &lt;div class="social-icon"&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="http://facebook.com"&gt;&lt;i class="fa fa-facebook"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://twitter.com"&gt;&lt;i class="fa fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://tumblr.com"&gt;&lt;i class="fa fa-tumblr"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://vimeo.com"&gt;&lt;i class="fa fa-vimeo"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://linkedin.com"&gt;&lt;i class="fa fa-linkedin"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://dribbble.com"&gt;&lt;i class="fa fa-dribbble"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://instagram.com"&gt;&lt;i class="fa fa-instagram"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="http://rssfeed.com"&gt;&lt;i class="fa fa-rss"&gt;&lt;/i&gt;&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                        &lt;p&gt;Copyright 2015 - 2016. All Rights Reserved. Powered by Themesawesome&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- COPYRIGHT END --&gt;
+
+            &lt;/footer&gt;
+            &lt;!-- FOOTER END --&gt;
+		</pre>
+		</div>
+		
+	
+	<div class="subsection" id="css_structure">
+			<h4>CSS Structure</h4>
+			<p>	The organization of the CSS is one of our priorities.<br>
+			These are the CSS file we&#39;re using in the template:</p>
+		<pre>
+		- style.css - (Generic styles, resets &amp; normalization)
+
+		- bootstrap.min.css - (Responsive grid styles)
+
+		- plugin.css - (This stylesheet contains any js plug-in.)
+
+		- responsive.css ( for media query)
+		</pre>
+		</div>
+		
+		<div class="clear"></div>
+
+		<hr>
+		
+	<div class="subsection" id="java_script">
+		<h4>Javascript</h4>
+			<p>	<strong>jQuery </strong>- is a Javascript library that greatly reduces the amount of code that you must write.<br>
+			For more information, please visit <a href="http://www.jquery.com/">http://www.jquery.com/</a><br>
+			<br>
+			The initialization of the elements, libs and features is made by the file theme.js, in the JS folder.<br>
+			Take a look at the &quot;build&quot; function to see what it does.</p>
+		</div>
+		
+	<div class="subsection" id="customization_styles">
+		<h4>Customization &amp; Styles</h4>
+			<h5>Fonts</h5>
+			<p>	To change the embedded font, please take a look in the head part of the website and you will find this tag:</p>
+			<p class="note">We use oswald font family in LOGITRANS. You can check the font at root > css > fonts</p>
+			<p>	To change the font, first go to http://www.google.com/webfonts choose a font and use the generated code. Or install it manually with convert the download zipped font to fontsquirel.com</p>
+
+			<h5>Slider</h5>
+			<p style="margin-left: 40px;">
+				<strong>Flexslider </strong>is the slider you&#39;ll find in the content.<br>
+				Flexslider is a simple slideshow script but with lots of options. You can find more documentation here <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a><br>
+				<br>
+				We included in the template CSS/JS a few customizations in order to show it&#39;s variations.<br>
+				<br>
+				The variations of the slider is defined by the CSS Class and in the &quot;data-plugin-options&quot; attribute, which extends the default plugin options.<br>
+				<br>
+				You can add the following classes:</p>
+			<p style="margin-left: 80px;">
+				<br>
+				<strong>- flexslider-simple<br>
+				<br>
+				- flexslider-top-title<br>
+				<br>
+				- flexslider.unstyled</strong></p>
+			<h5 style="margin-left: 40px;"><br>HTML Markup: Home Slider</h5>
+			<pre>
+            &lt;!-- SLIDER START
+            ============================================= --&gt;
+            &lt;section id="slider" class="home-slider clearfix"&gt;
+                &lt;div class="slider-wrapper"&gt;
+                    &lt;div class="flexslider clearfix"&gt;
+                        &lt;ul class="slides"&gt;
+                            &lt;li class="slide-item clearfix" style="background-image: url(img/slider/slide1.jpg);"&gt;   
+                                &lt;div class="flex-content"&gt;
+                                    &lt;div class="container"&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="caption-wrap"&gt;
+                                                &lt;div class="caption wow fadeInUp" data-wow-delay="1s"&gt;
+                                                    &lt;h1&gt;Passengers Transport&lt;/h1&gt;
+                                                &lt;/div&gt; 
+                                                &lt;div class="caption wow fadeIn" data-wow-delay="2s"&gt;
+                                                    &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.&lt;/p&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="caption wow fadeInUp" data-wow-delay="2.5s"&gt;
+                                                    &lt;a href="#" class="button-normal"&gt;Buy Now&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+
+                            &lt;li class="slide-item clearfix" style="background-image: url(img/slider/slide2.jpg);"&gt;   
+                                &lt;div class="flex-content"&gt;
+                                    &lt;div class="container"&gt;
+                                        &lt;div class="row"&gt;
+                                            &lt;div class="caption-wrap"&gt;
+                                                &lt;div class="caption wow fadeInUp" data-wow-delay="3s"&gt;
+                                                    &lt;h1&gt;We Deliver Your Goods Fast&lt;/h1&gt;
+                                                &lt;/div&gt; 
+                                                &lt;div class="caption wow fadeIn" data-wow-delay="4s"&gt;
+                                                    &lt;p&gt;Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.&lt;/p&gt;
+                                                &lt;/div&gt;
+                                                &lt;div class="caption wow fadeInUp" data-wow-delay="4.5s"&gt;
+                                                    &lt;a href="#" class="button-normal"&gt;Buy Now&lt;/a&gt;
+                                                &lt;/div&gt;
+                                            &lt;/div&gt;
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;!-- SLIDER END --&gt;
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>JS: Home Slider</h5>
+			<pre>
+            $('.flexslider').flexslider({
+	            animation: "fade"
+	        });
+
+	        var windowWidth = $(window).width();
+
+	        function sliderEqualHeight() {
+	            var slideHeight = $('#slider.home-slider ul li.slide-item');
+	            var slideWrap = $('#slider.home-slider .caption-wrap').height();
+
+	                slideHeight.css('min-height', slideWrap + 450);
+	        }
+
+	        function logisticsEqualHeight() {
+	            if( windowWidth > 789 ) {
+	            var postLeft = $('.services-calculator-wrap .form-section form');
+	            var postRight = $('.services-calculator-wrap').height();
+
+	                postLeft.css('height', postRight);
+	            }
+	        }
+
+	        function pagetitleEqualHeight() {
+	            var titleHeight = $('.page-title');
+	            var titleWrap = $('.page-title .title-wrap').height();
+
+	                titleHeight.css('min-height', titleWrap + 300);
+	        }
+
+	        window.onload = function() {
+	            logisticsEqualHeight()
+	            sliderEqualHeight()
+	            pagetitleEqualHeight();
+	        };
+
+	        window.onresize = function() {
+	            logisticsEqualHeight()
+	            sliderEqualHeight()
+	            pagetitleEqualHeight();
+	        };
+
+	        var siteHeaderHeight = $('.site-header').height(),
+	            backgroundSlider = $('.home-slider'),
+	            pageTitle = $('.page-title');
+
+	        backgroundSlider.css('margin-top', -siteHeaderHeight);
+	        pageTitle.css('margin-top', -siteHeaderHeight);
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>HTML Markup: Service Carousel</h5>
+			<pre>
+            &lt;!-- SERVICES START
+                ============================================= --&gt;
+                &lt;div class="services with-bg"&gt;
+                    &lt;div class="container"&gt;
+                        &lt;div class="row"&gt;
+
+                            &lt;!-- Service Quote --&gt;
+                            &lt;div class="email-quote clearfix"&gt;
+                                &lt;h4&gt;Request a Quote&lt;/h4&gt;
+                                &lt;form method="post"&gt;
+                                    &lt;input class="col-md-6" type="text" placeholder="Your Email" name="search_query" value=""&gt;
+                                    &lt;div class="category_filter col-md-6"&gt;
+                                        &lt;select name="cate" id="cate"&gt;
+                                            &lt;option value=""&gt;Services&lt;/option&gt;
+                                            &lt;option&gt;Overland Network&lt;/option&gt;
+                                            &lt;option&gt;Ocean Network&lt;/option&gt;
+                                            &lt;option&gt;Air Freight&lt;/option&gt;
+                                            &lt;option&gt;Cargo&lt;/option&gt;
+                                            &lt;option&gt;Storage&lt;/option&gt;
+                                            &lt;option&gt;Warehouse&lt;/option&gt;
+                                        &lt;/select&gt;
+                                        &lt;button type="submit" class="button-normal"&gt;&lt;span&gt;send now&lt;/span&gt;&lt;/button&gt;
+                                    &lt;/div&gt;
+                                &lt;/form&gt;
+                            &lt;/div&gt;
+                            &lt;!-- Service Quote --&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="section-title text-center wow fadeIn"&gt;
+                        &lt;h2&gt;Our Services&lt;/h2&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="services-wrap-carousel"&gt;
+                        &lt;div class="item"&gt;
+                            &lt;div class="services-content"&gt;
+                                &lt;div class="services-image" style="background-image: url(img/content/services-item-1.jpg);"&gt;&lt;/div&gt;
+                                &lt;div class="services-text"&gt;
+                                    &lt;h3 class="title"&gt;Overland Network&lt;/h3&gt;
+                                    &lt;p&gt;As a leader in global air freight forwarding, OIA Global excels in providing tailored transportation&lt;/p&gt;
+                                    &lt;a href="#" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="overlay"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="item"&gt;
+                            &lt;div class="services-content"&gt;
+                                &lt;div class="services-image" style="background-image: url(img/content/services-item-2.jpg);"&gt;&lt;/div&gt;
+                                &lt;div class="services-text"&gt;
+                                    &lt;h3 class="title"&gt;Ocean Network&lt;/h3&gt;
+                                    &lt;p&gt;As a leader in global air freight forwarding, OIA Global excels in providing tailored transportation&lt;/p&gt;
+                                    &lt;a href="#" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="overlay"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="item"&gt;
+                            &lt;div class="services-content"&gt;
+                                &lt;div class="services-image" style="background-image: url(img/content/services-item-3.jpg);"&gt;&lt;/div&gt;
+                                &lt;div class="services-text"&gt;
+                                    &lt;h3 class="title"&gt;Air Freight&lt;/h3&gt;
+                                    &lt;p&gt;As a leader in global air freight forwarding, OIA Global excels in providing tailored transportation&lt;/p&gt;
+                                    &lt;a href="#" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="overlay"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="item"&gt;
+                            &lt;div class="services-content"&gt;
+                                &lt;div class="services-image" style="background-image: url(img/content/services-item-4.jpg);"&gt;&lt;/div&gt;
+                                &lt;div class="services-text"&gt;
+                                    &lt;h3 class="title"&gt;Cargo&lt;/h3&gt;
+                                    &lt;p&gt;As a leader in global air freight forwarding, OIA Global excels in providing tailored transportation&lt;/p&gt;
+                                    &lt;a href="#" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="overlay"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="item"&gt;
+                            &lt;div class="services-content"&gt;
+                                &lt;div class="services-image" style="background-image: url(img/content/services-item-5.jpg);"&gt;&lt;/div&gt;
+                                &lt;div class="services-text"&gt;
+                                    &lt;h3 class="title"&gt;Storage&lt;/h3&gt;
+                                    &lt;p&gt;As a leader in global air freight forwarding, OIA Global excels in providing tailored transportation&lt;/p&gt;
+                                    &lt;a href="#" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="overlay"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="item"&gt;
+                            &lt;div class="services-content"&gt;
+                                &lt;div class="services-image" style="background-image: url(img/content/services-item-6.jpg);"&gt;&lt;/div&gt;
+                                &lt;div class="services-text"&gt;
+                                    &lt;h3 class="title"&gt;Warehousing&lt;/h3&gt;
+                                    &lt;p&gt;As a leader in global air freight forwarding, OIA Global excels in providing tailored transportation&lt;/p&gt;
+                                    &lt;a href="#" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                                &lt;div class="overlay"&gt;&lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;        
+                &lt;/div&gt;
+                &lt;!-- SERVICES END --&gt;
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>JS: Service Carousel</h5>
+			<pre>
+            $('.services-wrap-carousel').owlCarousel({
+            stagePadding: 50,
+            loop:true,
+            margin:10,
+            nav:true,
+            dots:false,
+            navText: [
+              "<i class='icon icon-ios-arrow-thin-left'></i>",
+              "<i class='icon icon-ios-arrow-thin-right'></i>"
+              ],
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                },
+                1200:{
+                    items:2
+                }
+            }
+        })
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>HTML Markup: Latest Post Carousel</h5>
+			<pre>
+        &lt;!-- LATEST NEWS START
+        ============================================= --&gt;
+        &lt;div class="latest-post wrapper bg-color"&gt;
+            &lt;div class="container"&gt;
+                &lt;div class="row"&gt;
+                    &lt;div class="section-title text-center wow fadeIn"&gt;
+                        &lt;h2&gt;Latest News&lt;/h2&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class="post-wrap wow fadeIn" data-wow-delay="0.5s"&gt;
+                        &lt;div class="post-item"&gt;
+                            &lt;div class="post-thumb"&gt;
+                                &lt;a href="single-post.html"&gt;
+                                    &lt;img src="img/content/latest-post-thumb-1.jpg" alt="" /&gt;
+                                    &lt;div class="overlay"&gt;&lt;/div&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="post-content"&gt;
+                                &lt;div class="date"&gt;
+                                    &lt;span&gt;20&lt;/span&gt;
+                                    &lt;span&gt;May&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content-wrap"&gt;
+                                    &lt;h4&gt;Transformtive Donation For Main Philanthropy&lt;/h4&gt;
+                                    &lt;div class="meta"&gt;
+                                        &lt;span class="author"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; mochreza&lt;/span&gt;
+                                        &lt;span class="views"&gt;&lt;i class="fa fa-eye"&gt;&lt;/i&gt; 95 Views&lt;/span&gt;
+                                        &lt;span class="comments last"&gt;&lt;i class="fa fa-comment"&gt;&lt;/i&gt; 2 Comments&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;p class="excerpt"&gt;Etiamt vehicula elit.Vivauedaus rutrum mi ut aliquam In hac habitasse <br>platore dictum will Integer sagittis neque in porta semes.&lt;/p&gt;
+                                    &lt;a href="single-post.html" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="post-item"&gt;
+                            &lt;div class="post-thumb"&gt;
+                                &lt;a href="single-post.html"&gt;
+                                    &lt;img src="img/content/latest-post-thumb-2.jpg" alt="" /&gt;
+                                    &lt;div class="overlay"&gt;&lt;/div&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="post-content"&gt;
+                                &lt;div class="date"&gt;
+                                    &lt;span&gt;26&lt;/span&gt;
+                                    &lt;span&gt;May&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content-wrap"&gt;
+                                    &lt;h4&gt;Corporate Meeting Turns Into a Photo Shooting&lt;/h4&gt;
+                                    &lt;div class="meta"&gt;
+                                        &lt;span class="author"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; mochreza&lt;/span&gt;
+                                        &lt;span class="views"&gt;&lt;i class="fa fa-eye"&gt;&lt;/i&gt; 95 Views&lt;/span&gt;
+                                        &lt;span class="comments last"&gt;&lt;i class="fa fa-comment"&gt;&lt;/i&gt; 2 Comments&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;p class="excerpt"&gt;Etiamt vehicula elit.Vivauedaus rutrum mi ut aliquam In hac habitasse <br>platore dictum will Integer sagittis neque in porta semes.&lt;/p&gt;
+                                    &lt;a href="single-post.html" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+
+                        &lt;div class="post-item"&gt;
+                            &lt;div class="post-thumb"&gt;
+                                &lt;a href="single-post.html"&gt;
+                                    &lt;img src="img/content/latest-post-thumb-3.jpg" alt="" /&gt;
+                                    &lt;div class="overlay"&gt;&lt;/div&gt;
+                                &lt;/a&gt;
+                            &lt;/div&gt;
+
+                            &lt;div class="post-content"&gt;
+                                &lt;div class="date"&gt;
+                                    &lt;span&gt;30&lt;/span&gt;
+                                    &lt;span&gt;May&lt;/span&gt;
+                                &lt;/div&gt;
+                                &lt;div class="content-wrap"&gt;
+                                    &lt;h4&gt;Statistics and Analysis The Key To Success&lt;/h4&gt;
+                                    &lt;div class="meta"&gt;
+                                        &lt;span class="author"&gt;&lt;i class="fa fa-user"&gt;&lt;/i&gt; mochreza&lt;/span&gt;
+                                        &lt;span class="views"&gt;&lt;i class="fa fa-eye"&gt;&lt;/i&gt; 95 Views&lt;/span&gt;
+                                        &lt;span class="comments last"&gt;&lt;i class="fa fa-comment"&gt;&lt;/i&gt; 2 Comments&lt;/span&gt;
+                                    &lt;/div&gt;
+                                    &lt;p class="excerpt"&gt;Etiamt vehicula elit.Vivauedaus rutrum mi ut aliquam In hac habitasse <br>platore dictum will Integer sagittis neque in porta semes.&lt;/p&gt;
+                                    &lt;a href="single-post.html" class="button-normal with-icon"&gt;
+                                        Read More
+                                        &lt;i class="icon icon-arrow-right"&gt;&lt;/i&gt;
+                                    &lt;/a&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- LATEST NEWS END --&gt;
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>JS: Latest Post Carousel</h5>
+			<pre style="margin-left: 40px;">
+	$('.post-wrap, .team-wrap').owlCarousel({
+            loop:true,
+            margin:30,
+            nav:true,
+            navText: [
+              "<i class='icon icon-arrow-left'></i>",
+              "<i class='icon icon-arrow-right'></i>"
+              ],
+            dots:false,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:3
+                }
+            }
+        })
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>HTML Markup: Counter Number</h5>
+			<pre>
+            &lt;!-- COUNTER NUMBER START
+                ============================================= --&gt;
+                &lt;div class="counter-section wrapper"&gt;
+                    &lt;div class="container"&gt;
+                        &lt;div class="row"&gt;
+
+                            &lt;div class="counter-wrap row"&gt;
+                                &lt;div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="0.2s"&gt;
+                                    &lt;h2 class="counter"&gt;1,273&lt;/h2&gt;
+                                    &lt;div class="counter-details"&gt;
+                                        &lt;p class="heading"&gt;Delivered Packages&lt;/p&gt;
+                                        &lt;p&gt;The core values are the guiding principles that dictate behavior and action.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="0.4s"&gt;
+                                    &lt;h2 class="counter"&gt;473,754&lt;/h2&gt;
+                                    &lt;div class="counter-details"&gt;
+                                        &lt;p class="heading"&gt;KM Per Year&lt;/p&gt;
+                                        &lt;p&gt;The core values are the guiding principles that dictate behavior and action.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="0.6s"&gt;
+                                    &lt;h2 class="counter"&gt;25&lt;/h2&gt;
+                                    &lt;div class="counter-details"&gt;
+                                        &lt;p class="heading"&gt;Years of Experience&lt;/p&gt;
+                                        &lt;p&gt;The core values are the guiding principles that dictate behavior and action.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="0.8s"&gt;
+                                    &lt;h2 class="counter"&gt;719&lt;/h2&gt;
+                                    &lt;div class="counter-details"&gt;
+                                        &lt;p class="heading"&gt;Happy Clients&lt;/p&gt;
+                                        &lt;p&gt;The core values are the guiding principles that dictate behavior and action.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+
+                                &lt;div class="counter-item col-md-15 wow fadeInUp" data-wow-delay="1s"&gt;
+                                    &lt;h2 class="counter"&gt;4,234&lt;/h2&gt;
+                                    &lt;div class="counter-details"&gt;
+                                        &lt;p class="heading"&gt;Tons of Goods&lt;/p&gt;
+                                        &lt;p&gt;The core values are the guiding principles that dictate behavior and action.&lt;/p&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;!-- COUNTER NUMBER END --&gt;
+			</pre>
+
+			<h5 style="margin-left: 40px;"><br>JS: Counter Number</h5>
+			<pre style="margin-left: 40px;">
+	$('.counter').counterUp({
+            delay: 20,
+            time: 3000
+        });
+			</pre>
+			
+	</div>		
+
+
+	<div class="subsection" id="responsive">
+			<h4>Responsive</h4>
+			<p>	The template supports a handful of media queries to help make your projects more appropriate on different devices and screen resolutions.</p>
+			<h5><br>Here&#39;s what&#39;s included:&nbsp;</h5>
+			<p style="margin-left: 40px;">
+				<strong>Label</strong>: Large display<br>
+				<strong> Layout width:</strong> 1200px and up<br>
+				<strong> Column width:</strong> 70px<br>
+				<strong> Gutter width: </strong>30px<br>
+				<br>
+				<strong>Label</strong>: Default<br>
+				<strong> Layout width: </strong>980px and up<br>
+				<strong> Column width: </strong>60px<br>
+				<strong> Gutter width:</strong> 20px<br>
+				<br>
+				<strong>Label</strong>: Portrait tablets<br>
+				<strong> Layout width: </strong>768px and above<br>
+				<strong> Column width:</strong> 42px<br>
+				<strong> Gutter width: </strong>20px<br>
+				<br>
+				<strong> Label: </strong>Phones to tablets<br>
+				<strong> Layout width: </strong>767px and below<br>
+				<strong> Column width:</strong> Fluid columns, no fixed widths<br>
+				<br>
+				<strong> Label: </strong>Phones<br>
+				<strong> Layout width:</strong> 480px and below<br>
+				<strong> Column width:</strong> Fluid columns, no fixed widths</p>
+			
+			<p><br>If you need more information, please visit this site: <a href="http://twitter.github.com/bootstrap/scaffolding.html#responsive">http://twitter.github.com/bootstrap/scaffolding.html#responsive</a></p>
+	</div>
+
+	<div class="subsection" id="source_credits">
+			<h4>Source &amp; Credits</h4>
+			<p class="note">
+			The images included in preview are for demonstration purposes and should always be replaced with your own work.</p>
+		<p style="margin-left: 40px;">
+			<br>
+			<ul>
+		<li>Resources Used:
+		<ul>
+		<li><a href="http://modernizr.com/">Modernizr</a></li>
+		<li><a href="http://j.mp/respondjs">Respond</a></li>
+		<li><a href="https://github.com/matthieua/WOW">WOW</a></li>
+		<li><a href="http://www.woothemes.com/flexslider/">Flexslider</a> (GPLv2 License)</li>
+		<li><a href="http://www.owlcarousel.owlgraphic.com/">Owl Carousel 2</a></li>
+		<li><a href="http://getbootstrap.com"> Bootstrap v2.3.2</a> (Apache License v2.0)</li>
+		<li><a href="https://github.com/imakewebthings/waypoints">Waypoints</a> MIT license and GPL license</li>
+		<li><a href="https://github.com/bfintal/Counter-Up">CounterUp</a> GPL v2 License</li>
+		<li><a href="http://tympanus.net/Blueprints/SlidePushMenus/">Slide Menu Right</a></li>
+		</ul>
+		</li>
+		</ul>
+		<div class="clear"></div>
+
+		<hr>
+		
+		<p>Once again, thank you for purchasing this theme. Customer satisfaction is our #1 priority, which is why we always endeavour to provide the best service we can. We’re only an email away if you ever need us!</p> 
+		
+		<p class="append-bottom alt large"><strong>Themes Awesome Team</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
