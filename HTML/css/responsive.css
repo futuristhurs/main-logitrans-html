@@ -1,0 +1,361 @@
+/* #Media Queries
+================================================== */
+
+	@media only screen and (max-width: 1366px) {
+		/* Slider */
+		.home-slider .flex-direction-nav .flex-prev,
+		.flexslider:hover .flex-direction-nav .flex-prev {
+		    left: 0;
+		}
+		.home-slider .flex-direction-nav .flex-next, 
+		.flexslider:hover .flex-direction-nav .flex-next {
+		    right: 0px;
+		}
+		.home-slider .caption-wrap {
+		    width: 50%;
+		}
+	}
+
+	@media only screen and (max-width: 1280px) {
+		/* Home Slider */
+		.home-slider .caption-wrap {
+		    width: 60%;
+    		padding-left: 50px;
+		}
+
+		/* Latest Post */
+		.latest-post .owl-theme .owl-controls .owl-nav .owl-prev {
+			left: 0px;
+		    background-color: rgba(255, 255, 255, 0.7);
+		    margin: 0;
+		    padding: 0;
+		    width: 50px;
+		    height: 50px;
+		}
+		.latest-post .owl-theme .owl-controls .owl-nav .owl-next {
+		    right: 0px;
+		    background-color: rgba(255, 255, 255, 0.7);
+		    margin: 0;
+		    padding: 0;
+		    width: 50px;
+		    height: 50px;
+		}
+		.latest-post .owl-theme .owl-controls .owl-nav [class*=owl-], .team .owl-theme .owl-controls .owl-nav [class*=owl-] {
+		    top: 20%;
+		    font-size: 38px;
+		}
+
+		/* Team Section */
+		.team .owl-theme .owl-controls .owl-nav .owl-prev {
+			left: -40px;
+		}
+		.team .owl-theme .owl-controls .owl-nav .owl-next {
+			right: -40px;
+		}
+
+	}
+
+	@media only screen and (max-width: 1024px) {
+		/* Home Slider */
+		.home-slider .flex-direction-nav a:before {
+		    font-size: 50px;
+		}
+		.home-slider .flex-direction-nav .flex-next, .home-slider .flex-direction-nav .flex-prev {
+		    height: 75px;
+		    top: 60%;
+		}
+
+		/* Header */
+		.top-header ul li {
+		    margin: 0 5px;
+		}
+		.top-header ul li p span {
+		    font-size: 14px;
+		}
+		.top-header ul li p span.heading {
+		    font-size: 13px;
+		}
+
+		/* Email Quote */
+		.services .email-quote {
+		    padding: 30px 25px;
+		}
+		.services .email-quote select {
+		    width: 54.5%;
+		}
+
+		/* Features Section */
+		.features-item {
+		    padding: 20px 20px 20px 95px;
+		}
+		.features-item .icon-wrap {
+		    padding: 0px 20px;
+		}
+		.features-item .icon-wrap i {
+    		font-size: 42px;
+		    line-height: 165px;
+		}
+
+		/* Latest Post */
+		.latest-post .owl-theme .owl-controls .owl-nav [class*=owl-], .team .owl-theme .owl-controls .owl-nav [class*=owl-] {
+		    top: 13%;
+		}
+
+		/* Team Section */
+		.team .owl-theme .owl-controls .owl-nav .owl-prev {
+			left: -15px;
+		}
+		.team .owl-theme .owl-controls .owl-nav .owl-next {
+			right: -15px;
+		}
+
+		/* Services Page */
+		.services-page .services-text h3.title {
+			font-size: 20px;
+		}
+		.services-page .services-thumb img {
+			width: 100%;
+		}
+	}
+
+	@media only screen and (max-width: 992px) {
+		/* Header */
+		.site-header .navigation,
+		.top-header .info {
+			display: none;
+		}
+		.top-header .logo {
+			float: left;
+		}
+		#slide-buttons {
+		    display: block;
+		}
+		.top-header .slide-buttons {
+			float: right;
+		}
+
+		/* Home Slider */
+		.home-slider .caption-wrap {
+		    width: 60%;
+		    padding-left: 0;
+		}
+
+		/* Email Quote */
+		.services .email-quote h4 {
+			display: block;
+		    width: 100%;
+		    float: none;
+		    text-align: center;
+		    margin-bottom: 20px;
+		}
+		.email-quote form .col-md-6 {
+			width: 50%;
+			float: left;
+		}
+		.services .email-quote select {
+		    width: 55.7%;
+		}
+		.email-quote form .category_filter.col-md-6 {
+			padding-right: 0;
+		}
+
+		/* Features Section */
+		.features-item .icon-wrap i {
+		    line-height: 120px;
+		}
+
+		/* Service Calculator */
+		.services-calculator .intro-section .image {
+		    position: relative;
+		    margin: 0 auto;
+		}
+		.services-calculator .intro-section .image img {
+		    transform: none;
+		}
+		.services-calculator .form-section form {
+		    height: 100% !important;
+		}
+
+		/* Partner Logo */
+		.partner-logo {
+			width: 20%;
+			float: left;
+		}
+
+		/* Latest Post */
+		.latest-post .owl-theme .owl-controls .owl-nav [class*=owl-], .team .owl-theme .owl-controls .owl-nav [class*=owl-] {
+		    top: 30%;
+		}
+
+		/* Caounter Number */
+		.counter-item {
+			text-align: center;
+			margin-bottom: 40px;
+		}
+		.counter-section h2:after {
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		/* Footer */
+		.widget-footer {
+			margin-bottom: 60px;
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		/* Layout */
+		.container {
+			width: 100%;
+		    padding: 0 10%;
+		}
+
+		/* Home Slider */
+		.home-slider .caption-wrap {
+	        top: 40%;
+		    width: 84%;
+		    padding: 0 10%;
+		    text-align: center;
+		}
+		.home-slider .caption-wrap h1:after {
+		    margin-left: auto;
+		    margin-right: auto;
+		}
+
+		/* Email Quote */
+		.services .email-quote input.col-md-6 {
+		    width: 100%;
+		    margin-bottom: 10px;
+		}
+		.email-quote form .category_filter.col-md-6 {
+		    padding-right: 0;
+		    padding-left: 0;
+		    width: 100%;
+		    text-align: center;
+		}
+		.services .email-quote select {
+		    width: 100%;
+		}
+		.services .email-quote button {
+		    margin-left: 0;
+		    margin-top: 20px;
+		}
+
+		/* Services */
+		.services .services-text {
+		    padding: 0 5%;
+		}
+
+		/* Features Section */
+		.features-item .icon-wrap i {
+		    line-height: 125px;
+		}
+
+		/* Partner Logo */
+		.partner-logo {
+		    width: 100%;
+		    float: none;
+		    margin-bottom: 40px;
+		}
+
+		/* Latest Post */
+		.latest-post .owl-theme .owl-controls .owl-nav [class*=owl-], .team .owl-theme .owl-controls .owl-nav [class*=owl-] {
+		    top: 30%;
+		}
+
+		/* About Us Page - Company Desc Section */
+		.company-slider {
+			margin-top: 40px;
+		}
+		.company-vision img {
+			width: 100%;
+		}
+		.company-vision .item {
+			margin-bottom: 40px;
+		}
+
+		/* Contact Us Banner */
+		.contact-us-banner h1 {
+		    font-size: 28px;
+		}
+
+		/* Sidebar */
+		.sidebar {
+		    padding-left: 15px;
+		    margin-top: 80px;
+		}
+
+		/* Contact Page */
+		.contact-form {
+			margin-top: 60px;
+		}
+
+	}
+
+	@media only screen and (max-width: 640px) {
+		/* Layout */
+		.container {
+		    width: 100%;
+		    padding: 0 10%;
+		}
+
+		/* Home Slider */
+		.home-slider .caption-wrap {
+		    width: 85%;
+		}
+
+		/* Latest Post */
+		.latest-post .owl-theme .owl-controls .owl-nav [class*=owl-],
+		.team .owl-theme .owl-controls .owl-nav [class*=owl-] {
+		    top: 25%;
+		}
+
+	}
+
+	@media only screen and (max-width: 480px) {
+		/* Home Slider */
+		.home-slider .caption-wrap h1 {
+			font-size: 28px;
+			line-height: 1.5;
+		}
+
+		/* Services */
+		.services .services-wrap-carousel .owl-prev i, .services .services-wrap-carousel .owl-next i {
+		    font-size: 40px;
+		}
+
+		/* Features Section */
+		.features-item .icon-wrap i {
+		    line-height: 160px;
+		}
+
+		/* Testimonial */
+		.testimonial-item p {
+		    font-size: 18px;
+		}
+		.testimonial-item {
+		    background-position: 30px 75%;
+		    background-size: 30px;
+		    padding: 30px 30px 90px 30px;
+		}
+
+		/* Latest Post */
+		.latest-post .owl-theme .owl-controls .owl-nav [class*=owl-], 
+		.team .owl-theme .owl-controls .owl-nav [class*=owl-] {
+		    top: 15%;
+		}
+
+		/* Calculator Form */
+		.services-calculator .form-section p.extra-services,
+		.services-calculator .form-section p.fragile {
+			width: 100%;
+		}
+		#totalPrice {
+		    margin-top: 90px;
+		}
+
+		/* Footer */
+		.copyright .social-icon ul li {
+		    margin: 0 10px;
+		}
+	}
