@@ -210,14 +210,19 @@ img {
     z-index: 9999;
 }
 
+.hat{
+    align-content: center;
+}
+
 #status {
     height: 200px;
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../img/status.gif);
+    align-items: center;
+    /*background-image: url(../img/loadergif.gif);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     transform: translate(-50%, -50%);
 }
 
@@ -2197,5 +2202,3 @@ h4.title {
     font-weight: 300;
     letter-spacing: 0.1em;
 }
-
-tet
