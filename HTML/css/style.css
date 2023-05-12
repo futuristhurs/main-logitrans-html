@@ -43,7 +43,7 @@ q:after {
 
 blockquote {
     margin: 1em 0;
-    border-left: 10px solid #ea4335;
+    border-left: 10px solid #de4a22;
     padding-left: 12px;
     font-style: italic;
     font-weight: 400;
@@ -170,7 +170,7 @@ p {
 }
 
 a {
-    color: #ea4335;
+    color: #de4a22;
     text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -222,7 +222,7 @@ img {
 }
 
 a.button-normal {
-    background-color: #ea4335;
+    background-color: #de4a22;
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
@@ -243,7 +243,7 @@ a.button-normal.white {
 }
 
 a.button-normal.white:hover {
-    background-color: #ea4335;
+    background-color: #de4a22;
     color: #ffffff;
 }
 
@@ -321,7 +321,7 @@ a.button-normal.with-icon-left .icon {
     float: left;
     margin-right: 10px;
     padding: 10px 10px;
-    background-color: #ea4335;
+    background-color: #de4a22;
     color: #ffffff;
     font-size: 24px;
 }
@@ -351,7 +351,7 @@ a.button-normal.with-icon-left .icon {
 .main-menu {
     position: relative;
     height: 50px;
-    background: #ea4335;
+    background: #de4a22;
     width: auto;
 }
 
@@ -488,7 +488,7 @@ a.button-normal.with-icon-left .icon {
     padding: 15px 15px;
     font-size: 14px;
     color: #ffffff;
-    background: #ea4335;
+    background: #de4a22;
     -webkit-transition: all .35s ease;
     -moz-transition: all .35s ease;
     -ms-transition: all .35s ease;
@@ -792,7 +792,7 @@ ul.slide-menu-items li.has-sub > ul {
     margin-top: 0;
 }
 .header-style-2 .navigation {
-    background-color: #ea4335;
+    background-color: #de4a22;
     height: 50px;
 }
 .header-style-2 .main-menu > ul {
@@ -824,7 +824,7 @@ ul.slide-menu-items li.has-sub > ul {
 .section-title h2:after {
     content: '';
     position: absolute;
-    background-color: #ea4335;
+    background-color: #de4a22;
     width: 100px;
     height: 4px;
     margin-top: 15px;
@@ -849,7 +849,7 @@ h3.title {
 
 h3.title:after {
     content: '';
-    background-color: #ea4335;
+    background-color: #de4a22;
     width: 75px;
     height: 2px;
     margin-top: 15px;
@@ -992,7 +992,7 @@ h4.title {
 }
 
 .services .email-quote {
-    background-color: #ea4335;
+    background-color: #de4a22;
     position: relative;
     top: -50px;
     z-index: 500;
@@ -1161,7 +1161,7 @@ h4.title {
 }
 
 .features-item .icon-wrap {
-    background-color: #ea4335;
+    background-color: #de4a22;
     position: absolute;
     left: 0;
     top: 0;
@@ -1200,7 +1200,7 @@ h4.title {
 }
 
 .services-calculator .form-section form {
-    background-color: #ea4335;
+    background-color: #de4a22;
     padding: 100px 40px;
 }
 
@@ -1384,7 +1384,7 @@ h4.title {
 .latest-post .post-content .date {
     float: left;
     margin-right: 15px;
-    background-color: #ea4335;
+    background-color: #de4a22;
     padding: 10px;
 }
 
@@ -1420,7 +1420,7 @@ h4.title {
 }
 
 .latest-post .post-content .content-wrap .meta span i {
-    color: #ea4335;
+    color: #de4a22;
     margin-right: 5px;
 }
 
@@ -1433,7 +1433,7 @@ h4.title {
     top: 15%;
     position: absolute;
     background: none;
-    color: #ea4335;
+    color: #de4a22;
     font-size: 52px;
 }
 
@@ -1462,7 +1462,7 @@ h4.title {
 }
 
 .counter-section h2 {
-    color: #ea4335;
+    color: #de4a22;
 }
 
 .counter-section h2:after {
@@ -1470,7 +1470,7 @@ h4.title {
     display: block;
     margin-top: 20px;
     width: 50px;
-    border-top: 2px solid #ea4335;
+    border-top: 2px solid #de4a22;
 }
 
 .counter-section p {
@@ -1513,7 +1513,7 @@ h4.title {
 }
 
 .company-slider .flex-control-paging li a.flex-active {
-    background: #ea4335;
+    background: #de4a22;
 }
 
 .company-vision {
@@ -1542,7 +1542,7 @@ h4.title {
     bottom: -40px;
     width: 100%;
     padding: 20px;
-    background-color: #ea4335;
+    background-color: #de4a22;
     -webkit-transition: all .25s ease;
     -moz-transition: all .25s ease;
     -ms-transition: all .25s ease;
@@ -1666,7 +1666,7 @@ h4.title {
 
 .single-services-wrap .features-item .icon-wrap i {
     font-size: 32px;
-    color: #ea4335;
+    color: #de4a22;
     line-height: 70px;
 }
 
@@ -1718,12 +1718,12 @@ h4.title {
 }
 
 .sidebar .widget ul li a:hover {
-    color: #ea4335;
+    color: #de4a22;
     left: 10px;
 }
 
 .sidebar .widget.pdf-download {
-    background-color: #ea4335;
+    background-color: #de4a22;
     padding: 20px;
 }
 
@@ -1814,7 +1814,7 @@ h4.title {
 }
 
 .blog .post-item h3:hover {
-    color: #ea4335;
+    color: #de4a22;
 }
 
 .blog .post-item .meta {
@@ -1830,7 +1830,7 @@ h4.title {
 }
 
 .blog .post-item .meta span i {
-    color: #ea4335;
+    color: #de4a22;
     margin-right: 5px;
 }
 .blog .pagination {
@@ -1839,8 +1839,8 @@ h4.title {
 .pagination span.active {
     font-size: 16px;
     color: #ffffff;
-    background-color: #ea4335;
-    border: 1px solid #ea4335;
+    background-color: #de4a22;
+    border: 1px solid #de4a22;
     width: 35px;
     height: 35px;
     line-height: 32px;
@@ -1866,8 +1866,8 @@ h4.title {
     border-radius: 5px;
 }
 .pagination span a:hover {
-    background-color: #ea4335;
-    border: 1px solid #ea4335;
+    background-color: #de4a22;
+    border: 1px solid #de4a22;
     color: #ffffff;
 }
 .pagination span.last a {
@@ -1907,7 +1907,7 @@ h4.title {
 }
 
 .sidebar .recent-post .post-content h4:hover {
-    color: #ea4335;
+    color: #de4a22;
 }
 
 .sidebar .recent-post .post-content .meta {
@@ -1916,7 +1916,7 @@ h4.title {
 
 .sidebar .tags a {
     display: inline-block;
-    background-color: #ea4335;
+    background-color: #de4a22;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 12px;
@@ -1975,8 +1975,8 @@ h4.title {
 }
 
 .share ul li a:hover {
-    background-color: #ea4335;
-    border: 1px solid #ea4335;
+    background-color: #de4a22;
+    border: 1px solid #de4a22;
     color: #ffffff;
 }
 
@@ -1987,7 +1987,7 @@ h4.title {
 
 .contact-page .address,
 .contact-page .hours {
-    background-color: #ea4335;
+    background-color: #de4a22;
     padding: 20px;
 }
 
@@ -2197,5 +2197,3 @@ h4.title {
     font-weight: 300;
     letter-spacing: 0.1em;
 }
-
-tet
