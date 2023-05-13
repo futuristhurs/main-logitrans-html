@@ -226,6 +226,8 @@ img {
     transform: translate(-50%, -50%);
 }
 
+
+
 a.button-normal {
     background-color: #d3461e;
     color: #ffffff;
@@ -305,6 +307,11 @@ a.button-normal.with-icon-left .icon {
 
 .top-header .logo img {
     margin-top: 5px;
+}
+
+.logo{
+    width: 10%;
+    height: auto;
 }
 
 .top-header ul {
@@ -988,7 +995,7 @@ h4.title {
 /* Services */
 
 .services {
-    background-image: url(../img/content/services-bg-1.jpg);
+    background-image: url(../img/content/services-bg.jpg);
     background-size: cover;
     background-position: center center;
     padding-bottom: 90px;
@@ -2170,7 +2177,7 @@ h4.title {
 /* Copyright */
 
 .copyright {
-    background-color: rgba(1, 47, 84, 0.8);
+    background-color: #6d3628;
     position: absolute;
     width: 100%;
     bottom: 0;
