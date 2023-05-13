@@ -43,7 +43,7 @@ q:after {
 
 blockquote {
     margin: 1em 0;
-    border-left: 10px solid #de4a22;
+    border-left: 10px solid #d3461e;
     padding-left: 12px;
     font-style: italic;
     font-weight: 400;
@@ -51,14 +51,14 @@ blockquote {
 }
 
 table th {
-    background: #ddd;
+    background: #ff8772;
     font-weight: bold;
 }
 
 table td,
 table th {
     padding: 8px;
-    border: 1px solid #bbb;
+    border: 1px solid #999999;
     text-align: left;
 }
 
@@ -80,12 +80,12 @@ figure {
 }
 
 *::-moz-selection {
-    background: #000;
+    background: #6d3628;
     color: #fff;
 }
 
 *::selection {
-    background: #000;
+    background: #6d3628;
     color: #fff;
 }
 
@@ -170,7 +170,7 @@ p {
 }
 
 a {
-    color: #de4a22;
+    color: #ff8772;
     text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
@@ -179,7 +179,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #08487e;
+    color: #ffb5ac;
     text-decoration: none;
     outline: 0;
 }
@@ -219,15 +219,15 @@ img {
     position: absolute;
     left: 50%;
     top: 50%;
-    align-items: center;
-    /*background-image: url(../img/loadergif.gif);
+    align-content: center;
+    background-image: url(../img/loadergif.gif);
     background-repeat: no-repeat;
-    background-position: center;*/
+    background-position: center;
     transform: translate(-50%, -50%);
 }
 
 a.button-normal {
-    background-color: #de4a22;
+    background-color: #d3461e;
     color: #ffffff;
     font-size: 15px;
     font-weight: 700;
@@ -239,17 +239,17 @@ a.button-normal {
 }
 
 a.button-normal:hover {
-    background-color: #08487e;
+    background-color: #ff4814;
 }
 
 a.button-normal.white {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: #d3461e;
+    color: #ffffff;
 }
 
 a.button-normal.white:hover {
-    background-color: #de4a22;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #333333;
 }
 
 a.button-normal.with-icon {
@@ -265,7 +265,7 @@ a.button-normal.with-icon .icon {
     line-height: 48px;
     font-size: 20px;
     padding: 0 6px 0 10px;
-    background-color: #08487e;
+    background-color: #ff5d36;
 }
 
 a.button-normal.with-icon-left {
@@ -281,7 +281,7 @@ a.button-normal.with-icon-left .icon {
     line-height: 48px;
     font-size: 20px;
     padding: 0 6px 0 10px;
-    background-color: #08487e;
+    background-color: #ff5d36;
 }
 
 
@@ -506,7 +506,7 @@ a.button-normal.with-icon-left .icon {
 }
 
 .main-menu ul ul li:hover > a {
-    background: #08487e;
+    background: #d3461e;
 }
 
 .main-menu ul ul li:last-child > a,
@@ -1444,7 +1444,7 @@ h4.title {
 
 .latest-post .owl-theme .owl-controls .owl-nav [class*=owl-]:hover,
 .team .owl-theme .owl-controls .owl-nav [class*=owl-]:hover {
-    color: #08487e;
+    color: #d3461e;
 }
 
 .latest-post .owl-prev,
@@ -1556,7 +1556,7 @@ h4.title {
 }
 
 .team-photo:hover .team-details {
-    background-color: #08487e;
+    background-color: #d3461e;
     bottom: 0;
 }
 
@@ -1931,7 +1931,7 @@ h4.title {
 }
 
 .sidebar .tags a:hover {
-    background-color: #08487e;
+    background-color: #d3461e;
 }
 
 
@@ -1980,7 +1980,7 @@ h4.title {
 }
 
 .share ul li a:hover {
-    background-color: #de4a22;
+    background-color: #d3461e;
     border: 1px solid #de4a22;
     color: #ffffff;
 }
