@@ -215,9 +215,10 @@ img {
     position: absolute;
     left: 50%;
     top: 50%;
-    background-image: url(../img/status.gif);
+    align-items: center;
+    /*background-image: url(../img/status.gif);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center;*/
     transform: translate(-50%, -50%);
 }
 
