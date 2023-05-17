@@ -1,0 +1,15 @@
+<div id="preloader">
+    <div id="status">
+        <img src="img/logo.jpg" width="00%" height="auto" alt="Loading..." />
+    </div>
+</div>
+
+<!--Use this for loading page to make it more responsive-->
+
+where you are feature
+<p>You Are Here :
+                                <span><a href="index.html">Home</a></span>
+                                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                                <span><a href="services.html">Services</a></span>
+                                <span class="arrow"><i class="icon icon-arrow-right"></i></span>
+                                <span>

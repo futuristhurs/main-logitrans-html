@@ -1,7 +1,0 @@
-<div id="preloader">
-    <div id="status">
-        <img src="img/logo.jpg" width="00%" height="auto" alt="Loading..." />
-    </div>
-</div>
-
-<!--Use this for loading page to make it more responsive-->
