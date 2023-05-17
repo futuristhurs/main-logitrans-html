@@ -994,6 +994,20 @@ h4.title {
 
 /* Services */
 
+.size{
+    height: 170px
+    width: 400px
+    max-width: 500px;
+    max-height: 170px !important;
+    overflow: auto !important;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+.text{
+    height: 100px
+}
+
+}
 .services {
     background-image: url(../img/content/services-bg.jpg);
     background-size: cover;
