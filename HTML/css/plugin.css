@@ -11183,7 +11183,7 @@ html[xmlns] .flexslider .slides {
 }
 
 .icon-cargo:before {
-  content: "\a1";
+  content: "\7f";
 }
 
 .icon-container:before {
@@ -11234,7 +11234,7 @@ html[xmlns] .flexslider .slides {
   content: "\70";
 }
 
-@charset "UTF-8";
+/* @charset "UTF-8"; */
 
 /*!
 Animate.css - http://daneden.me/animate
