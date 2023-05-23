@@ -30,6 +30,22 @@
             animation: "fade"
         });
 
+        var emailButton = document.getElementById('emailButton');
+        var phoneButton = document.getElementById('phoneButton');
+        var emailForm = document.getElementById('emailForm');
+        var phoneForm = document.getElementById('phoneForm');
+
+        emailButton.addEventListener('click', function() {
+        emailForm.style.display = 'block';
+        phoneForm.style.display = 'none';
+        });
+
+        phoneButton.addEventListener('click', function() {
+        phoneForm.style.display = 'block';
+        emailForm.style.display = 'none';
+        });
+
+
         var windowWidth = $(window).width();
 
         function sliderEqualHeight() {

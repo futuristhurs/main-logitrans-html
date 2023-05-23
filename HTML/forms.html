@@ -9,52 +9,19 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Google Fonts
+    <!-- Stylesheets
     ============================================= -->
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,300' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-<!-- start    css for the forms-->
-    <style>
-            img.wp-smiley, img.emoji {
-                display: inline !important;
-                border: none !important;
-                box-shadow: none !important;
-                height: 1em !important;
-                width: 1em !important;
-                margin: 0 0.07em !important;
-                vertical-align: -0.1em !important;
-                background: none !important;
-                padding: 0 !important;
-            }
-    .form-section {
-      display: none;
-    }
 
-    .visible {
-      display: block;
-    }
-  </style>
-    <script>
-    function showSection(sectionId) {
-      var sections = document.getElementsByClassName("form-section");
-      for (var i = 0; i < sections.length; i++) {
-        sections[i].classList.remove("visible");
-      }
-      document.getElementById(sectionId).classList.add("visible");
-    }
-  </script>
     <link rel='stylesheet' id='elementor-frontend-css' href='https://exdysy.designservicepro.com/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.12.2' media='all'/>
     <link rel='stylesheet' id='elementor-post-6-css' href='https://exdysy.designservicepro.com/wp-content/uploads/elementor/css/post-6.css?ver=1682525892' media='all'/>
     <link rel='stylesheet' id='elementor-post-15-css' href='https://exdysy.designservicepro.com/wp-content/uploads/elementor/css/post-15.css?ver=1682525892' media='all'/>
-
-    <!--end css for the forms-->
-
-    <!-- Stylesheets
-    ============================================= -->
     <link rel="stylesheet" href="css/plugin.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <link rel="stylesheet" href="css/responsive.css" type="text/css" />
-
+    
+    <!-- End of Stylesheets
+    ============================================= -->
+    
     <!-- JavaScripts
     ============================================= -->
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -247,82 +214,10 @@
     </section>
     <!-- PAGE TITLE END -->
 
-     <!-- SERVICES CALCULATOR START
-                ============================================= -->
-                <div class="services-calculator bg-color">
-                    <div class="container">
-                        <div class="row">
-                            <div class="services-calculator-wrap row">
-                                <div class="intro-section col-md-6">
-                                    <h3 class="title">Services Calculator</h3>
-                                    <p>WE OFFER FLEXIBLE PRICING THAT IS QUITE AGGRESSIVE COMPARED TO OTHER AIR/OCEAN CARGO SERVICE PROVIDERS IN THE SECTOR.</p>
-                                    <div class="image">
-                                        <img src="img/content/service-calculator-img.png" alt="" />
-                                    </div>
-                                </div>
-
-                                <div class="form-section col-md-6">
-                                    <form id="calculationform" onsubmit="return false;">
-                                        <p class="intro">* Please fill all inquiry to get your total price</p>
-                                        <fieldset>
-                                            <label>Services</label>
-                                            <select id="services_type" name='services_type' onchange="calculateTotal()">
-                                                <option value="None">Select Services</option>
-                                                <option value="Overland">Overland Network</option>
-                                                <option value="Ocean">Ocean Network</option>
-                                                <option value="Air">Air Freight</option>
-                                                <option value="Cargo">Cargo</option>
-                                                <option value="Storage">Storage</option>
-                                                <option value="Warehousing">Warehousing</option>
-                                            </select>
-
-                                            <label>Type of Goods</label>
-                                            <select id="goods_type" name='goods_type' onchange="calculateTotal()">
-                                                <option value="None">Type of Goods</option>
-                                                <option value="General">General Merchandise</option>
-                                                <option value="Fragile">Fragile Goods</option>
-                                                <option value="Fine">Fine Arts</option>
-                                                <option value="Hazardous">Hazardous Goods</option>
-                                            </select>
-
-                                            <p class="extra-services">
-                                                <label>Extra Services</label>
-                                                <span>
-                                                    <label for='expressdelivery'>Express Delivery</label>
-                                                    <input type="checkbox" id="expressdelivery" name='expressdelivery' onclick="calculateTotal()" />
-                                                </span>
-                                                <span>
-                                                    <label for='insurance'>Add Insurance</label>
-                                                    <input type="checkbox" id="insurance" name='insurance' onclick="calculateTotal()" />
-                                                </span>
-                                                <span>
-                                                    <label for='packaging'>Packaging</label>
-                                                    <input type="checkbox" id="packaging" name='packaging' onclick="calculateTotal()" />
-                                                </span>
-                                            </p>
-
-                                            <p class="fragile clearfix">
-                                                <label>Fragile</label>
-                                                <span>
-                                                    <label for='fragileyes'>Yes</label>
-                                                    <input type="checkbox" id="fragileyes" name='fragileyes' onclick="calculateTotal()" />
-                                                </span>
-                                            </p>
-                                            
-                                            <div id="totalPrice">
-                                                Total Price = $
-                                            </div>
-                                        </fieldset>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- SERVICE CALCULATOR END -->
-
-
     <!-- CONTENT START
+    ============================================= -->
+
+    <!-- Forms Start
     ============================================= -->
     <section id="content" class="clearfix">
         <div data-elementor-type="footer" data-elementor-id="15" class="elementor elementor-15 elementor-location-footer">
@@ -363,157 +258,127 @@
                             </div>
                         </div>
                         <div data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-element elementor-element-85301b4 e-con-full e-con" data-id="85301b4" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="elementor-element elementor-element-afa5924 elementor-widget elementor-widget-heading" data-id="afa5924" data-element_type="widget" data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">
-                                    <span style="color:#000;font-weight:400 !important;">Get A </span>
-                                    Quote
-                                </h2>
+                            <div class="elementor-element elementor-element-afa5924 elementor-widget elementor-widget-heading" data-id="afa5924" data-element_type="widget" data-widget_type="heading.default">
+                                <div class="elementor-widget-container">
+                                    <h2 class="elementor-heading-title elementor-size-default">
+                                        <span style="color:#000;font-weight:400 !important;">Get A </span>
+                                        Quote
+                                    </h2>
+                                </div>
                             </div>
-                        </div>
-                        <div class="elementor-element elementor-element-023d913 elementor-widget elementor-widget-text-editor" data-id="023d913" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">For shipments, an export declaration and agreement are necessary. We will email you shippers and power of Attorney Form to fill and attach the copy to the form filled for pick up.						</div>
-                        </div>
-                        <div class="elementor-element elementor-element-2bc5aa9 elementor-button-align-start elementor-widget elementor-widget-form" data-id="2bc5aa9" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
-                            <div class="elementor-widget-container">
-                                <form class="elementor-form" method="post" name="Get A Quote - Form">
-                                    <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_5a36701 elementor-col-50 elementor-field-required">
-                                        <label class="elementor-field-label">Shipper Type							</label>
-                                        <div class="elementor-field elementor-select-wrapper ">
-                                            <select onchange="showSection(this.value)" class="elementor-field-textual elementor-size-sm">
-                                                <option value=""></option>
-                                                <option value="individual-section">Individual</option>
-                                                <option value="buisness-section">Buisness</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-form-fields-wrapper elementor-labels-above">
-<!--                                        <div id="business-section" class="form-section">-->
-                                        <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-33 elementor-field-required">
-                                            <label class="elementor-field-label">Contact Full Name:</label>
-                                            <input size="1" type="text" name="contact-name" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
-                                        </div>
-                                        <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-33 elementor-field-required">
-                                            <label class="elementor-field-label">Business Email							</label>
-                                            <input size="1" type="email" name="business-email" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
-                                        </div>
-                                        <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_99123c1 elementor-col-33 elementor-field-required">
-                                            <label class="elementor-field-label">Business Phone							</label>
-                                            <input size="1" type="tel" name="business-phone-number" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
-                                        </div>
-                                        <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_05a885c elementor-col-33 elementor-field-required">
-                                            <label class="elementor-field-label">Business Address							</label>
-                                            <textarea size="1" type="text" name="business-address" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true"></textarea>
-                                        </div>
-                                        <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_5c4522b elementor-col-50 elementor-field-required">
-                                            <label class="elementor-field-label">Service Type							</label>
-                                            <div class="elementor-field elementor-select-wrapper ">
-                                                <select name="Service Type" class="elementor-field-textual elementor-size-sm" required="required" aria-required="true">
-                                                    <option value=""></option>
-                                                    <option value="drop-off">Drop Off</option>
-                                                    <option value="pick-up">Pick Up</option>
-                                                    <option value="mail-in"">Mail In</option>                                                </select>
+                            <div class="elementor-element elementor-element-023d913 elementor-widget elementor-widget-text-editor" data-id="023d913" data-element_type="widget" data-widget_type="text-editor.default">
+                                <div class="elementor-widget-container">For shipments, an export declaration and agreement are necessary. We will email you shippers and power of Attorney Form to fill and attach the copy to the form filled for pick up.						</div>
+                            </div>
+                            <div class="elementor-element elementor-element-2bc5aa9 elementor-button-align-start elementor-widget elementor-widget-form" data-id="2bc5aa9" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+                                <div class="elementor-widget-container">
+                                    <form class="elementor-form" method="post" name="Get A Quote - Form">
+                                        <input type="hidden" name="post_id" value="15"/>
+                                        <input type="hidden" name="form_id" value="2bc5aa9"/>
+                                        <input type="hidden" name="referer_title" value="Contact Us"/>
+                                        <input type="hidden" name="queried_id" value="56"/>
+                                        <div class="elementor-form-fields-wrapper elementor-labels-above">
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-name elementor-col-33 elementor-field-required">
+                                                <label for="form-field-name" class="elementor-field-label">Full Name							</label>
+                                                <input size="1" type="text" name="form_fields[name]" id="form-field-name" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
                                             </div>
-                                        </div>
-                                        <br>
-                                        <br>
-
-                                        <label for="document-upload">Document Upload:</label>
-                                        <br>
-                                        <input type="file" id="document-upload" name="document-upload">
-                                        <br>
-                                        <label class="elementor-field-label" for="document-type">Document Type:</label>
-                                        <select id="document-type" name="document-type">
-                                            <option value="id">ID</option>
-                                            <option value="passport">Passport</option>
-                                            <option value="state-id">State ID</option>
-                                            <option value="driver-license">Driver License</option>
-                                            <option value="student-id">Student ID</option>
-                                        </select>
-<br>
-
-                                        <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_361656c elementor-col-25 elementor-field-required">
-                                            <label style="white-space: nowrap;" class="elementor-field-label">Are You The Owner of The Package?							</label>
-                                        </div>
-
-                                        <div class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-field_ad78e7d elementor-col-100 elementor-field-required">
-                                            <div class="elementor-field-subgroup  elementor-subgroup-inline">
-                                                    <span class="elementor-field-option" id="owner">
-                                                        <input type="radio" value="yes" name="owner" required="required" aria-required="true">
-                                                        <label>Yes</label>
-                                                        <Br>
-                                                        <input type="radio" value="no"  name="owner" required="required" aria-required="true">
-                                                        <label>No</label>
-                                                    </span>
+                                            <div class="elementor-field-type-email elementor-field-group elementor-column elementor-field-group-email elementor-col-33 elementor-field-required">
+                                                <label for="form-field-email" class="elementor-field-label">Email							</label>
+                                                <input size="1" type="email" name="form_fields[email]" id="form-field-email" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
                                             </div>
-                                        </div>
-
-
-<!--                                        trying out the new form-->
-
-
-                                            <div id="individual-section" class="form-section">
-                                                <h3>Individual Details</h3>
-                                                <!-- Individual fields here -->
-
-                                                    <label for="shipper-export-name">Shipper's Export Name:</label>
-                                                    <br>
-                                                    <input type="text" id="shipper-export-name" name="shipper-export-name">
-                                                    <br>
-
-                                                    <label for="shipper-phone">Shipper's Phone Number:</label>
-                                                    <br>
-                                                    <input type="tel" id="shipper-phone" name="shipper-phone">
-                                                    <br>
-
-                                                    <label for="shipper-email">Shipper's Email:</label>
-                                                    <br>
-                                                    <input type="email" id="shipper-email" name="shipper-email">
-                                                    <br>
-
-                                                    <label for="shipper-address">Shipper's Address:</label>
-                                                    <br>
-                                                    <textarea id="shipper-address" name="shipper-address"></textarea>
-                                                    <br>
-                                                    <br>
-                                                    <label for="shipper-type">Shipper Type:</label>
-                                                    <br>
-                                                    <select id="shipper-type" name="shipper-type">
-                                                        <option value="">Select Shipper Type</option>
-                                                        <option value="pick-up">Pick Up</option>
-                                                        <option value="drop-off">Drop Off</option>
-                                                        <option value="mail-in">Mail In</option>
+                                            <div class="elementor-field-type-tel elementor-field-group elementor-column elementor-field-group-field_99123c1 elementor-col-33 elementor-field-required">
+                                                <label for="form-field-field_99123c1" class="elementor-field-label">Phone							</label>
+                                                <input size="1" type="tel" name="form_fields[field_99123c1]" id="form-field-field_99123c1" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted.">
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_89e1036 elementor-col-33 elementor-field-required">
+                                                <label for="form-field-field_89e1036" class="elementor-field-label">Subject							</label>
+                                                <input size="1" type="text" name="form_fields[field_89e1036]" id="form-field-field_89e1036" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_05a885c elementor-col-33 elementor-field-required">
+                                                <label for="form-field-field_05a885c" class="elementor-field-label">Delivery City							</label>
+                                                <input size="1" type="text" name="form_fields[field_05a885c]" id="form-field-field_05a885c" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_c03e451 elementor-col-33 elementor-field-required">
+                                                <label for="form-field-field_c03e451" class="elementor-field-label">City of Departure							</label>
+                                                <input size="1" type="text" name="form_fields[field_c03e451]" id="form-field-field_c03e451" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </div>
+                                            <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_5c4522b elementor-col-50 elementor-field-required">
+                                                <label for="form-field-field_5c4522b" class="elementor-field-label">Freight Type							</label>
+                                                <div class="elementor-field elementor-select-wrapper ">
+                                                    <select name="form_fields[field_5c4522b]" id="form-field-field_5c4522b" class="elementor-field-textual elementor-size-sm" required="required" aria-required="true">
+                                                        <option value=""></option>
                                                     </select>
-                                                    <br>
-                                                    <br>
-
-                                                    <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
-                                                        <button type="submit" class="elementor-button elementor-size-sm">
+                                                </div>
+                                            </div>
+                                            <div class="elementor-field-type-select elementor-field-group elementor-column elementor-field-group-field_5a36701 elementor-col-50 elementor-field-required">
+                                                <label for="form-field-field_5a36701" class="elementor-field-label">Incoterms							</label>
+                                                <div class="elementor-field elementor-select-wrapper ">
+                                                    <select name="form_fields[field_5a36701]" id="form-field-field_5a36701" class="elementor-field-textual elementor-size-sm" required="required" aria-required="true">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_1f55100 elementor-col-25 elementor-field-required">
+                                                <label for="form-field-field_1f55100" class="elementor-field-label">Weight							</label>
+                                                <input size="1" type="text" name="form_fields[field_1f55100]" id="form-field-field_1f55100" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_d49d245 elementor-col-25 elementor-field-required">
+                                                <label for="form-field-field_d49d245" class="elementor-field-label">Width							</label>
+                                                <input size="1" type="text" name="form_fields[field_d49d245]" id="form-field-field_d49d245" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_ba4f679 elementor-col-25 elementor-field-required">
+                                                <label for="form-field-field_ba4f679" class="elementor-field-label">Height							</label>
+                                                <input size="1" type="text" name="form_fields[field_ba4f679]" id="form-field-field_ba4f679" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </div>
+                                            <div class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-field_361656c elementor-col-25 elementor-field-required">
+                                                <label for="form-field-field_361656c" class="elementor-field-label">Lenght							</label>
+                                                <input size="1" type="text" name="form_fields[field_361656c]" id="form-field-field_361656c" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+                                            </di>
+                                            <div class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-field_ad78e7d elementor-col-100 elementor-field-required">
+                                                <div class="elementor-field-subgroup  elementor-subgroup-inline">
+                                                    <span class="elementor-field-option">
+                                                        <input type="radio" value="Fragille" id="form-field-field_ad78e7d-0" name="form_fields[field_ad78e7d]" required="required" aria-required="true">
+                                                        <label for="form-field-field_ad78e7d-0">Fragille</label>
+                                                    </span>
+                                                    <span class="elementor-field-option">
+                                                        <input type="radio" value="Express delivery" id="form-field-field_ad78e7d-1" name="form_fields[field_ad78e7d]" required="required" aria-required="true">
+                                                        <label for="form-field-field_ad78e7d-1">Express delivery</label>
+                                                    </span>
+                                                    <span class="elementor-field-option">
+                                                        <input type="radio" value="Insurance" id="form-field-field_ad78e7d-2" name="form_fields[field_ad78e7d]" required="required" aria-required="true">
+                                                        <label for="form-field-field_ad78e7d-2">Insurance</label>
+                                                    </span>
+                                                    <span class="elementor-field-option">
+                                                        <input type="radio" value="Packaging" id="form-field-field_ad78e7d-3" name="form_fields[field_ad78e7d]" required="required" aria-required="true">
+                                                        <label for="form-field-field_ad78e7d-3">Packaging</label>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100 e-form__buttons">
+                                                <button type="submit" class="elementor-button elementor-size-sm">
                                                     <span>
                                                         <span class=" elementor-button-icon"></span>
                                                         <span class="elementor-button-text">Appointment</span>
                                                     </span>
-                                                        </button>
-                                                    </div>
-
-
+                                                </button>
                                             </div>
-
-                                            </section>
-<!--end of the new form try out-->
-                                    </div>
-                                </form>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Forms End
+    ============================================= -->
+
+    
 
 
-        <!-- CONTENT END -->
+
+    <!-- CONTENT END -->
 
     <!-- FOOTER START
     ============================================= -->
@@ -659,25 +524,6 @@
 <script type="text/javascript" src="js/plugin.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/formcalculations.js"></script>
-<script>
-    document.getElementById("document-upload").addEventListener("change", function() {
-      var fileInput = document.getElementById("document-upload");
-      var file = fileInput.files[0];
-      var documentType = document.getElementById("document-type").value;
-
-      // Generate a unique ID for the uploaded file
-      var fileId = "file_" + Date.now();
-
-      // Attach the ID to the file object
-      file.fileId = fileId;
-
-      // You can now use the fileId to identify the uploaded file at the backend
-
-      console.log("File ID:", fileId);
-      console.log("Document Type:", documentType);
-      console.log("Uploaded File:", file);
-    });
-  </script>
 
 </body>
 </html>

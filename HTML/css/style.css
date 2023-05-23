@@ -235,8 +235,8 @@ a.button-normal {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
-    padding: 10px 30px;
-    margin-top: 20px;
+    padding: 10px 20px;
+    margin-top: 0px;
     display: inline-block;
 }
 
@@ -1200,6 +1200,9 @@ h4.title {
     color: #ffffff;
     line-height: 165px;
 }
+
+/* Services Quote */
+
 
 
 /* Services Calculator */
