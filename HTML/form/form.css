@@ -13,7 +13,7 @@ h2 {
 
 /* Form Styles */
 form {
-  max-width: 600px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 30px;
   background-color: #fff;
@@ -36,7 +36,7 @@ input[type="email"],
 input[type="tel"],
 textarea,
 select {
-  width: 100%;
+  width: 80%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -44,14 +44,22 @@ select {
   color: #555;
 }
 
-select {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: url("dropdown-arrow.png") no-repeat right center;
-  background-size: 20px;
-  padding-right: 30px;
+.shipper-receiver-container {
+  display: flex;
+  justify-content: space-between;
 }
+
+.input-block {
+  flex: 1;
+
+}
+
+
+.input-block input {
+  display: block;
+  margin-bottom: 10px;
+}
+
 
 /* Label Styles */
 label {

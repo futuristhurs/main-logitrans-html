@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Form Example</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+
+<form>
+    <h2>FORM</h2>
+    <div>
+        <section>
+            <select name="type" required="required" aria-required="true" onchange="showSection(this.value)">
+                <option value="" disabled selected hidden>Shipper Type</option>
+                <option value="individual-section">Individual</option>
+                <option value="business-section">Business</option>
+            </select>
+
+            <div id="individual-section" class="form-section">
+                <h3>Individual Details</h3>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="text" id="shipper-name" name="shipper-name" required="required" aria-required="true" placeholder="Shipper Name">
+                    </div>
+                    <div class="input-block">
+                        <input type="text" id="receiver-name" name="receiver-name" required="required" aria-required="true" placeholder="Receiver Name">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="tel" id="shipper-phone" name="shipper-phone" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted." placeholder="Shipper Address">
+                    </div>
+                    <div class="input-block">
+                        <input type="tel" id="receiver-phone" name="receiver-phone" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted." placeholder="Receiver Address">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="email" id="shipper-email" name="shipper-email" required="required" aria-required="true" placeholder="Shipper Email">
+                    </div>
+                    <div class="input-block">
+                        <input type="email" id="receiver-email" name="receiver-email" required="required" aria-required="true" placeholder="Receiver Email">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <textarea id="shipper-address" name="shipper-address" required="required" aria-required="true" placeholder="Shipper Address"></textarea>
+                    </div>
+                    <div class="input-block">
+                        <textarea id="receiver-address" name="receiver-address" required="required" aria-required="true" placeholder="Receiver Address"></textarea>
+                    </div>
+                </div>
+
+            </div>
+            <div id="business-section" class="form-section">
+                <h3>Business Details</h3>
+                <!-- Business fields here -->
+
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="text" id="business-name" name="business-shipper-name" required="required" aria-required="true" placeholder="Business Name/Company Name">
+                    </div>
+                    <div class="input-block">
+                        <input type="text" id="foreign-id" name="business-receiver-name" required="required" aria-required="true" placeholder="Foreign ID/ Federal Tax ID">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="text" id="business-shipper-name" name="business-shipper-name" required="required" aria-required="true" placeholder="Shipper Name">
+                    </div>
+                    <div class="input-block">
+                        <input type="text" id="business-receiver-name" name="business-receiver-name" required="required" aria-required="true" placeholder="Receiver Name">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="tel" id="business-shipper-phone" name="business-shipper-phone" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted." placeholder="Shipper Address">
+                    </div>
+                    <div class="input-block">
+                        <input type="tel" id="business-receiver-phone" name="business-receiver-phone" required="required" aria-required="true" pattern="[0-9()#&amp;+*-=.]+" title="Only numbers and phone characters (#, -, *, etc) are accepted." placeholder="Receiver Address">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <input type="email" id="business-shipper-email" name="business-shipper-email" required="required" aria-required="true" placeholder="Shipper Email">
+                    </div>
+                    <div class="input-block">
+                        <input type="email" id="business-receiver-email" name="business-receiver-email" required="required" aria-required="true" placeholder="Receiver Email">
+                    </div>
+                </div>
+                <div class="shipper-receiver-container">
+                    <div class="input-block">
+                        <textarea id="business-shipper-address" name="business-shipper-address" required="required" aria-required="true" placeholder="Shipper Address"></textarea>
+                    </div>
+                    <div class="input-block">
+                        <textarea id="business-receiver-address" name="business-receiver-address" required="required" aria-required="true" placeholder="Receiver Address"></textarea>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+    <br>
+    <br>
+    <div>
+        <select id="shipper-type" name="shipper-type" required="required" aria-required="true">
+            <option value="" disabled selected hidden>Select Shipment Type</option>
+            <option value="pick-up">Container</option>
+            <option value="drop-off">Roln-Rol-Out</option>
+            <option value="mail-in">Personal or Household Item</option>
+        </select>
+    </div>
+    <br>
+    <br>
+    <br>
+    <input type="submit" value="submit">
+</form>
+
+</body>
+
+</html>

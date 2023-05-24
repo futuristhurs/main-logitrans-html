@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Form Example</title>
   <link rel="stylesheet" href="form.css">
   <script src="form.js"></script>
 </head>
-<body>
 
-<form>
+<body>
+<button id="backButton">Back</button>
+
+<form action="send_data.php">
   <h2>FORM</h2>
   <div>
-  <section>
-    <select onchange="showSection(this.value)">
-      <option value="" disabled selected hidden>Shipper Type</option>
-      <option value="individual-section">Individual</option>
-      <option value="business-section">Business</option>
-    </select>
+    <section>
+      <select name="type" required="required" aria-required="true" onchange="showSection(this.value)">
+        <option value="" disabled selected hidden>Shipper Type</option>
+        <option value="individual-section">Individual</option>
+        <option value="business-section">Business</option>
+      </select>
 
-    <div id="individual-section" class="form-section">
-      <h3>Individual Details</h3>
-      <!-- Individual fields here -->
+      <div id="individual-section" class="form-section">
+        <h3>Individual Details</h3>
+        <!-- Individual fields here -->
 
         <label for="shipper-export-name">Shipper's Export Name:</label>
         <br>
@@ -51,63 +54,63 @@
         </select>
         <br>
 
-      <div class="radio-container">
-        <h3>Are you the owner of the package?</h3>
-        <input type="radio" value="yes" id="owner-yes" name="owner" required="required" aria-required="true">
-        <label for="owner-yes">Yes</label>
-        <br>
-        <input type="radio" value="no" id="owner-no" name="owner" required="required" aria-required="true">
-        <label for="owner-no">No</label>
+        <div class="radio-container">
+          <h3>Are you the owner of the package?</h3>
+          <input type="radio" value="yes" id="owner-yes" name="owner" required="required" aria-required="true">
+          <label for="owner-yes">Yes</label>
+          <br>
+          <input type="radio" value="no" id="owner-no" name="owner" required="required" aria-required="true">
+          <label for="owner-no">No</label>
+        </div>
+
       </div>
 
-    </div>
+
+      <div id="business-section" class="form-section">
+        <h3>Business Details</h3>
+        <!-- Business fields here -->
+
+        <label class="elementor-field-label">Contact Name:</label>
+        <input size="auto" type="text" name="contact-name" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
+        <br><br>
+        <label>Business Phone Number:</label>
+        <input type="tel" name="business-phone-number" required="required" aria-required="true">
+        <br><br>
+        <label>Business Email:</label>
+        <input type="email" name="business-email" required="required" aria-required="true">
+        <br><br>
+        <label>Business Address:</label>
+        <textarea id="business-address" name="business-address" required="required" aria-required="true"></textarea>
+        <br><br>
+        <label>Service Type:</label>
+        <select name="service-type" required="required" aria-required="true">
+          <option value="" disabled selected hidden>Type of Service</option>
+          <option value="drop-off">Drop Off</option>
+          <option value="pick-up">Pick Up</option>
+          <option value="mail-in">Mail In</option>
+        </select>
+        <br>
+        <br>
+        <label for="document-upload">Document Upload:</label>
+        <br><br>
+        <input type="file" id="document-upload" name="document-upload">
+        <br><br>
+        <label for="document-type">Document Type:</label>
+        <select id="document-type" name="document-type">
+          <option value="" disabled selected hidden>Select Document Type</option>
+          <option value="id">ID</option>
+          <option value="passport">Passport</option>
+          <option value="state-id">State ID</option>
+          <option value="driver-license">Driver License</option>
+          <option value="student-id">Student ID</option>
+        </select>
+        <br>
+        <br>
 
 
-    <div id="business-section" class="form-section">
-      <h3>Business Details</h3>
-      <!-- Business fields here -->
+      </div>
 
-      <label class="elementor-field-label">Contact Name:</label>
-      <input size="auto" type="text" name="contact-name" class="elementor-field elementor-size-sm  elementor-field-textual" required="required" aria-required="true">
-      <br><br>
-      <label>Business Phone Number:</label>
-      <input type="tel" name="business-phone-number" required="required" aria-required="true">
-      <br><br>
-      <label>Business Email:</label>
-      <input type="email" name="business-email" required="required" aria-required="true">
-      <br><br>
-      <label>Business Address:</label>
-      <textarea id="business-address" name="business-address" required="required" aria-required="true"></textarea>
-      <br><br>
-      <label>Service Type:</label>
-      <select name="service-type" required="required" aria-required="true">
-        <option value="" disabled selected hidden>Type of Service</option>
-        <option value="drop-off">Drop Off</option>
-        <option value="pick-up">Pick Up</option>
-        <option value="mail-in">Mail In</option>
-      </select>
-      <br>
-      <br>
-      <label for="document-upload">Document Upload:</label>
-      <br><br>
-      <input type="file" id="document-upload" name="document-upload">
-      <br><br>
-      <label for="document-type">Document Type:</label>
-      <select id="document-type" name="document-type">
-        <option value="" disabled selected hidden>Select Document Type</option>
-        <option value="id">ID</option>
-        <option value="passport">Passport</option>
-        <option value="state-id">State ID</option>
-        <option value="driver-license">Driver License</option>
-        <option value="student-id">Student ID</option>
-      </select>
-<br>
-      <br>
-
-
-    </div>
-
-  </section>
+    </section>
   </div>
   <br>
   <div>
@@ -120,10 +123,11 @@
       </select>
     </section>
   </div>
-<br>
+  <br>
   <br>
   <input type="submit" value="submit">
 </form>
 
 </body>
+
 </html>
