@@ -11,6 +11,23 @@ h2 {
   font-size: 28px;
 }
 
+/* Back Button Styles */
+#backButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#backButton:hover {
+  background-color: #333;
+}
+
 /* Form Styles */
 form {
   max-width: 900px;
